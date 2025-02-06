@@ -1,0 +1,92 @@
+<!-- Alex Burns -->
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/stylesheets/styles.css"> 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesecake Order Form</title>
+</head>>
+<body>
+    <!-- big top heading -->
+    <h1>Cheesecake Order Form</h1>
+
+    <!-- main image (folder must be unzipped for it to show up no clue why) -->
+    <img src="cheesecake.jpg" alt="cheesecake">
+    
+    <!-- main section of page -->
+    <form id="form">
+        <table>
+            <!-- table so quantity and topping parts will be side by side -->
+            <tr>
+                <th>Quantity</th>
+                <th>Topping</th>x`
+            </tr>
+            <tr>
+                <td>
+                    <!-- options for quantity (5 cause why you would need more then 5 cheesecakes at once) -->
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>
+                    <!-- radio buttons for type of cheesecake -->
+                    <label>
+                        <input type="radio" name="topping" value="plain" checked> Plain
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="topping" value="cherry"> Cherry
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="topping" value="chocolate"> Chocolate
+                    </label>
+                </td>
+            </tr>
+        </table>
+        
+        <div>
+            <!-- label for textarea with special instructions -->
+            <p>Notes:</p>
+            <textarea name="notes" rows="5" cols="40" id= "notes" placeholder="Enter any special instructions here."></textarea>
+        </div>
+        <button type="submit" id="order" >Order</button>
+    </form>
+    <div class="orders">
+        <h3>
+            <!-- all the fun stuff for the month scrollable dropdown hover menu -->
+            Orders for <span class="dropdown">
+                <span class="widget">Jan</span>
+                <div class="dropdown-content">
+                    <a class="month" data-month="Jan">Jan</a>
+                    <a class="month" data-month="Feb">Feb</a>
+                    <a class="month" data-month="Mar">Mar</a>
+                    <a class="month" data-month="Apr">Apr</a>
+                    <a class="month" data-month="May">May</a>
+                    <a class="month" data-month="Jun">Jun</a>
+                    <a class="month" data-month="Jul">Jul</a>
+                    <a class="month" data-month="Aug">Aug</a>
+                    <a class="month" data-month="Sep">Sep</a>
+                    <a class="month" data-month="Oct">Oct</a>
+                    <a class="month" data-month="Nov">Nov</a>
+                    <a class="month" data-month="Dec">Dec</a>
+                </div>
+            </span>
+        </h3>
+        <ul>
+            <!-- orders for month of january (hardcoded atm probably changes later) -->
+            <li>11 cherry</li>
+            <li>17 chocolate</li>
+            <li>31 plain</li>
+        </ul>
+    </div>
+    <!-- script for vegan warning and order confirmation -->
+    <script src="javascripts/cheesecakeBackend.js"></script>
+</body>
+</html>

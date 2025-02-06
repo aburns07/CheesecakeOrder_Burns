@@ -1,0 +1,225 @@
+/* Alex Burns */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* style for body of page */
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #faf3e7;
+    color: #272625;
+    text-align: center;
+}
+
+/* general header styling */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #660708; 
+    font: "Arial", cursive;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* top heading (big one in cursive) */
+h1 {
+    font-family: "Brush Script MT", monospace;
+    font-size: 6rem;
+    color: #272625; 
+}
+
+/* main content styling */
+main {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #161a1d; 
+    text-align: center; 
+}
+
+/* form section styling */
+form {
+    margin-bottom: 20px;
+}
+
+/* image inside form stying */
+form img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* form inputs styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* labels styling */
+label {
+    display: block;
+    margin: 5px 0;
+    text-align: center; 
+}
+
+/* select, textarea and radio button styling */
+select, 
+textarea, 
+input[type="radio"] {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px; 
+    margin: 10px auto;
+    display: block;
+}
+
+/* dont let the textarea shrink */
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* make buttons fancier */
+button {
+    display: block;
+    width: 100%;
+    max-width: 300px; 
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #660708;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+/* buttons when being hovered over change color */
+button:hover {
+    background-color: #940b0c;
+}
+
+/* section elements styling */
+section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* header 2 styling */
+h2 {
+    margin-bottom: 10px;
+    color: #660708;
+    text-align: center; 
+}
+
+/* unordered list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; 
+}
+
+/* stuff inside said list styling */
+ul li {
+    background: #f4f4f4; 
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 4px;
+    color: #161a1d; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+}
+
+/* months styling */
+a {
+    color: #660708;
+    text-decoration: none;
+}
+
+/* months when hovering */
+a:hover {
+    text-decoration: underline;
+}
+
+/* style table */
+table {
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    width: 90%; 
+}
+
+/* table header and cell styling */
+table th, 
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* table header styling */
+table th {
+    background-color: #660708;
+    color: white;
+}
+
+/* just no ugly table rows pls */
+table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* again no ugly table rows */
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/*  USED TO FIGURE OUT DROPDOWN MENU 
+    https://www.w3schools.com/css/css_dropdowns.asp */
+
+/* normal dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    color: #660708;
+}
+
+/* dropdown when hovering */
+.dropdown:hover .widget {
+    background: #d6d8db;
+}
+
+/* dropdown inside styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: max(10ch);
+    max-height: min(8em);
+    overflow-y: auto;
+}
+
+/* tbh only here cause when it wasn't the whole thing would be rows of 2 */
+.dropdown-content a {
+    display: block;
+}
+

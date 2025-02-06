@@ -1,1 +1,2 @@
 # CheesecakeOrder_Burns
+An application for ordering cheesecake with options for customizing toppings as well as the number of cheesecakes you want to order. Frontend using HTML, CSS and JavaScriot with backend by Express.js for managing and processing orders.
